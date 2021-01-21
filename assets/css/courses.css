@@ -1,0 +1,202 @@
+.carousel-control.left,.carousel-control.right{background-image: none;}
+body{ font-family: 'Poppins', sans-serif;}
+.tabs {display: flex;flex-wrap: wrap; }
+.container{padding-top: 50px;padding-bottom: 50px;}
+.carousel-inner .item{margin-top: 50px;}
+.tabs label {
+  order: 1; 
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #fff;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  width: 33.33%;
+  text-align: center;
+  margin-left: 0.2rem;
+  position: relative;
+}
+.bdrrgt{position: absolute;
+    right: 0;
+    top: 5px;
+    right: -7px;
+    height: 50px;}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+    display: none;
+}
+.tabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+/*****color****/
+#tabone-content {
+  color: #0d1943;
+  border-right: 0px solid #97223e;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-style: dotted;
+  margin: 0px; 
+  border-right-style: solid;
+  background: #ede5ff;
+}
+#tabtwo-content {
+  color: #0d1943;
+  border-right: 0px solid #97223e;
+  border-top: 2px solid #000;
+  border-left: 0px solid #000;
+  border-bottom: 2px solid #000;
+  border-style: dotted;
+  margin: 0px;
+  background: #ebeff2;
+   border-right-style: solid;
+}
+.tab#tabtwo-content,.tab#tabone-content,.tab#tab3-content{border: none;}
+#tab3-content {
+  color: #0d1943;
+  border:2px solid #000;
+  border-style: dotted;
+  margin: 0px;
+  border-left: 0;
+  background: #ede5ff;
+}
+#tab3-tab {
+  color: white;
+  background: #8bc53e;
+}
+#tabfour-tab {
+  color: white;
+  background: #00abc9;
+}
+#tabfour-content {
+  color: white;
+  background: #00abc9;
+}
+.accordion {
+  background-color: #d6073b;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #d6073b;
+}
+.accordion:after {
+  content: '\002B';
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.accodion .active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0px 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: max-height 0.2s ease-out;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #3c3950;
+  text-align: center;
+  padding: 0px 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+     margin-top: 20px;
+  }
+   .topnav.responsive .unique{display: inline-block !important;}
+
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .w100{width: 100%;}
+}
+.mtr15{margin-right: 15px;margin-top: 15px;}
+h1,.strt{text-align: center;text-transform: uppercase;color: #e61419;}
+.strt{color: #00ff00;}
+.crss{
+  background: #db1919;
+    color: #fff;
+    border-radius: 50%;
+    padding: 25px 15px 15px 15px;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    border:3px solid #bfbfbf;
+}
+#examnination ul li{list-style: none;}
+.coursedescription{background: #e4fad7;margin-top: 40px;padding: 15px;}
+.textnormal li{list-style: none;}
+.textnormal{text-align: left;}
+.mt15{margin-top: 50px;}
+.cerfiticket{border: 10px solid;width:100%;margin:auto;margin-top: 25px;}
+.leftspacing{padding-left: 50px;}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+}
